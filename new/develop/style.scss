@@ -133,9 +133,7 @@ a{
 	content: "";
 	left: 0;
 	right: 0;
-	background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
 	opacity: 0.8;
 	width: 100%;
 	height: 194px;
@@ -146,19 +144,19 @@ a{
 	background-image: url("../images/jpg/bg_section1.jpg");
 	background-size: cover;
 }
+
 .section1:after{
 	position: absolute;
 	content: "";
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
 	opacity: 0.8;
 	width: 100%;
 	height: 194px;
 }
+
 .header{
 	position: relative;
 	width: 100%;
@@ -737,6 +735,16 @@ a{
 }
 /*SECTION5*/
 /*SECTION6*/
+.section6:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	right: 0;
+	background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
+	opacity: 0.8;
+	width: 100%;
+	height: 194px;
+}
 .section6{
 	position: relative;
 	height: 750px;
@@ -744,30 +752,16 @@ a{
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-.section6:before{
-	position: absolute;
-	content: "";
-	left: 0;
-	right: 0;
-	background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0) 0%, rgb(0,0,0) 100%);
-	opacity: 0.8;
-	width: 100%;
-	height: 194px;
-}
 .section6:after{
 	position: absolute;
-	content: "";
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-	opacity: 0.8;
-	width: 100%;
-	height: 194px;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+    opacity: 0.8;
+    width: 100%;
+    height: 194px;
 }
 .section6__headline{
 	position: relative;
@@ -790,6 +784,7 @@ a{
 /*FOOTER*/
 footer{
 	background-color: #000;
+	margin-top: 48px;
 }
 .cell__line-footer{
 	display: flex;
