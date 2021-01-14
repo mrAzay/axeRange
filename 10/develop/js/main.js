@@ -200,4 +200,24 @@ $(document).ready(function() {
             clickable: true,
         },
     });
+    
+    $( window ).resize(function() {
+        update_height();
+    });
+    
+    update_height();
+    
+    function update_height() {
+        var max = Math.max.apply(Math, $(".fixed-height").map(
+            function(){
+              $(this).css('height', 'auto');
+              return $(this).outerHeight();
+            }
+          ));
+        
+        $(".fixed-height").each(function(){
+            $(this).css("height", max);
+        });
+    }
+    
 });
