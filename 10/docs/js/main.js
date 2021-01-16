@@ -3280,6 +3280,4 @@ $(document).ready(function() {
         });
     }
     
-    
-    
 });

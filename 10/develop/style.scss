@@ -12,7 +12,6 @@
 	font-style: normal;
 }
 
-
 *,
 *::after,
 *::before {
@@ -174,7 +173,7 @@ a{
 }
 
 .section1__headline, .section2__headline, .section3__headline, .section4__headline, .section5__headline{
-	margin-bottom: 35px;
+	margin-bottom: 50px;
 }
 .section1__headline{
 	position: relative;
@@ -199,7 +198,7 @@ a{
 }
 .section1__btn{
 	position: relative;
-	margin: 140px auto 0 auto;
+	margin: 35px auto 0 auto;
 	font-size: 24px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -337,7 +336,6 @@ a{
 	padding-bottom: 160px;
 	background-image: url("../images/jpg/bg_section2.jpg");
 	background-size: cover;
-    
 }
 .section2__headline{
 	font-size: 48px;
@@ -346,7 +344,7 @@ a{
 	text-transform: uppercase;
 	line-height: 0.75;
 	text-align: center;
-	padding-top: 150px;
+	padding-top: 170px;
 }
 .section2__text{
 	font-size: 18px;
@@ -355,11 +353,14 @@ a{
 	text-align: center;
 	width: 728px;
 	font-weight: 500;
-	margin-top: 30px;
+	
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.section2__text + .section2__text{
+	margin-top: 46px;
+}
 
 /*SECTION2*/
 /*SECTION3*/
@@ -385,11 +386,13 @@ a{
 	line-height: 1.667;
 	text-align: center;
 	width: 728px;
-    margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.section3__text + .section3__text{
+	margin-top: 30px;
+}
 
 /*SECTION3*/
 /*SECTION4*/
@@ -1072,16 +1075,10 @@ footer{
 	opacity: .7;
 	margin-top: 10px;
 	margin-bottom: 10px;
-    text-align: center;
 }
 
 .swiper-slide-prev {
 	margin-left: -10px;
-    text-align: right;
-}
- 
-.swiper-slide-next {
-    text-align: left;
 }
 
 .swiper-slide-active {
@@ -1091,7 +1088,6 @@ footer{
 	margin-bottom: 0;
 }
 
-
 @import "css/responsive";
 @import "css/nice-select";
 @import "css/slick-theme";
@@ -1099,11 +1095,8 @@ footer{
 
 @media  (max-width: 425px){
 	.section1__headline, .section2__headline, .section3__headline, .section4__headline, .section5__headline {
-		padding-top: 15px;
+		padding-top: 33px;
 		margin-bottom: 10px;
 		line-height: 1.2;
   }
-    .section1__headline{
-        padding-top: 0;
-    }
 }
