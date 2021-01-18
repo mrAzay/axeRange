@@ -188,17 +188,18 @@ $(document).ready(function() {
         duration: 1000,
         offset: 100
     });
+    
+    //window.removeEventListener("resize",(0,f.default)(j,x.debounceDelay,!0))
 
-    var swiper = new Swiper('.slider2', {
-        slidesPerView: 1.5,
-        spaceBetween: 20,
-        loop: true,
-        centeredSlides: true,
-        slidesPerGroup: 1,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            clickable: true,
-        },
+    $('.slider2').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        arrows: false,
+        focusOnSelect: true
     });
     
     $( window ).resize(function() {

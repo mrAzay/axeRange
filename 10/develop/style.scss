@@ -198,8 +198,11 @@ a{
 	z-index: 100;
 }
 .section1__btn{
-	position: relative;
-	margin: 140px auto 0 auto;
+	position: absolute;
+    content: "";
+    top: 65%;
+    left: 50%;
+    margin-left: -110px;
 	font-size: 24px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -209,7 +212,7 @@ a{
 	border-radius: 5px;
 	background-color: #F00000;
 	box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.004);
-	width: 223px;
+	width: 220px;
 	height: 58px;
 	overflow: hidden;
 	transition: 0.3s;
@@ -286,9 +289,14 @@ a{
 .section1__btn:not(:disabled):not([disabled]):not(:active):hover {
 	background-color: transparent
 }
+.section1__bottom.img{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+}
 .section1__bottom{
-	position: relative;
-	margin-top: 72px;
+    width: 99%;
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
@@ -519,6 +527,9 @@ a{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 0;
+}
+.section1__btn.section6-bth{
+    position: relative;
 }
 .tablet{
 	display: none;
@@ -1087,14 +1098,51 @@ footer{
 .swiper-slide-next {
     text-align: left;
 }
+.swiper-slide picture{
+    transition: .5s;
+    transform: translateX(-50%);
+    display: block;
+    position: absolute;
+    left: 50%;
+}
+
 
 .swiper-slide-active {
 	width: 70% !important;
 	opacity: 1;
 	margin-top: 0;
 	margin-bottom: 0;
+    
+}
+.swiper-slide {
+    position: relative;
+    text-align: center !important;
+}
+.swiper-slide-prev picture{
+    padding-left: 100px;
+    transform: translateX(50%);
+    left: 100%;
+    transform: translateX(-100%)
+    
+}
+.swiper-slide-next picture{
+    left: 0;
+    transform: translateX(0);
 }
 
+.slick-slide {
+    opacity: .7;
+    transition: .3s;
+    outline: none !important;
+}
+.slick-slide.slick-active {
+    opacity: 1;
+}
+.slick-slider .slick-track .slick-slide img {
+    width: auto;
+    margin: unset;
+    max-width: 100%;
+}
 
 @import "css/responsive";
 @import "css/nice-select";
