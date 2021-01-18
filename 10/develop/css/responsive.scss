@@ -941,9 +941,7 @@
 		background-position: top center;
 		background-size: auto;
 	}
-    .section1__btn.section6-bth{
-        position: relative;
-    }
+    
 	.section5__info{
 		display: none;
 	}
@@ -1243,8 +1241,10 @@
 	
 	.section1__bottom{
 		flex-wrap: wrap;
-		margin-top: 2vh;
 	}
+    .section1__bottom.img{
+        bottom: 20px;
+    }
 	.raiting-icone,
 	.spacial-raiting{
 		width: 120px;

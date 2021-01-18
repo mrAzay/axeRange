@@ -186,10 +186,9 @@ $(document).ready(function() {
     AOS.init({
         once: true,
         duration: 1000,
-        offset: 100
+        offset: 100,
+        
     });
-    
-    //window.removeEventListener("resize",(0,f.default)(j,x.debounceDelay,!0))
 
     $('.slider2').slick({
         dots: false,
@@ -202,23 +201,33 @@ $(document).ready(function() {
         focusOnSelect: true
     });
     
-    $( window ).resize(function() {
+    
+    $(window).resize(function (e) {
         update_height();
     });
-    
+
     update_height();
-    
+
     function update_height() {
-        var max = Math.max.apply(Math, $(".fixed-height").map(
-            function(){
-              $(this).css('height', 'auto');
-              return $(this).outerHeight();
-            }
-          ));
+
+        var maxHeight = 0;
         
-        $(".fixed-height").each(function(){
-            $(this).css("height", max);
+        $(".fixed-height").each(function () {
+            if ($(this).hasClass('section1')) return;
+
+            let totalHeight = 0;
+
+            $(this).children().each(function () {
+                totalHeight += $(this).outerHeight(true);
+            });
+            totalHeight += $(this).innerHeight() - $(this).height();
+            maxHeight = totalHeight > maxHeight ? totalHeight : maxHeight;
         });
+
+        $(".fixed-height").each(function () {
+            $(this).css("height", maxHeight);
+        });
+
     }
     
 });
