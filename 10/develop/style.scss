@@ -1145,7 +1145,6 @@ footer{
 }
 
 
-
 @import "css/responsive";
 @import "css/nice-select";
 @import "css/slick-theme";
@@ -1160,4 +1159,8 @@ footer{
     .section1__headline{
         padding-top: 0;
     }
+    .section1__btn{
+        top: 58%;
+    }
 }
+

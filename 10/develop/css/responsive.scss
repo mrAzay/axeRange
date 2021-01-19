@@ -1341,7 +1341,7 @@
 }
 @media screen and (max-width: 414px) {
     .section1__headline{
-        font-size: 35px;
+        font-size: 30px;
     }
 	.section1__bottom {
 		font-size: 2vh;
@@ -1414,6 +1414,9 @@
 	.section1 {
 		max-height: 630px;
 	}
+    .section1__headline{
+        font-size: 24px;
+    }
     
 	.open__item-text,
 	.contact__item-text1, .mailto, .maplink, .mobile-phone, .open__item-text {
@@ -1434,9 +1437,7 @@
 		min-width: 36px;
 	}
 	
-	.section1__headline {
-		font-size: 24px;
-	}
+	
 	.section1__text {
 		position: relative;
 		font-size: 14px;
